@@ -5,12 +5,12 @@
     <br><br>
     
 <div class="sheet-player">
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Character" checked />
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" title="Profile" />    
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" title="Career" />
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab11" value="11" title="Skills" /> 
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab10" value="10" title="Combat Tech" /> 
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4" title="Gear" />
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" checked /><span title="Character"></span>
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3"  /> <span title="Profile"></span>   
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2"  /><span title="Career"></span>
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab11" value="11"  /> <span title="Skills"></span>
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab10" value="10"  /> <span title="Combat Tech"></span>
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab4" value="4"  /><span title="Gear"></span>
 
     
 <div class="sheet-tab-br"></div>
@@ -615,44 +615,50 @@
 </div> <!-- End of Tab Personal Tab (10)-->
 
 <div class="sheet-tab2">  <!-- Start of Occupation Tab (2) -->
-    <h3>OCCUPATION</h3>
+    <h3>PROFESSIONAL R&Eacute;SUM&Eacute;</h3>
 <div class="sheet-2colrow"> 
 <div class="sheet-col">
 
         <!-- Experience Area -->
         <h4>EXPERIENCE POINTS</h4>
         <div class="sheet-row">
-            <div class="sheet-col-1-8 sheet-large-label sheet-center"><input type="number" class="sheet-center" title="@{ability_xp}" name="attr_ability_xp" disabled value="(@{STR_XP}+@{STA_XP}+@{DEX_XP}+@{RS_XP}+@{INT_XP}+@{LOG_XP}+@{PER_XP}+@{LDR_XP})">ABILITY</div>
-            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">+</span></div>
-            <div class="sheet-col-1-8 sheet-large-label sheet-center"><input type="number" class="sheet-center" title="@{race_xp}" name="attr_race_xp" disabled value="(@{Race_Ability1_XP}+@{Race_Ability2_XP}+@{Languages_XP})">RACE</div>
-            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">+</span></div>
-            <div class="sheet-col-1-8 sheet-large-label sheet-center"><input type="number" class="sheet-center" title="@{skill_xp}" name="attr_skill_xp" disabled value="@{BEAM_XP}+@{PROJECTILE_XP}+@{GYROJET_XP}+@{MELEE_XP}+@{THROWN_XP}+@{MA_XP}+@{DEMOLITIONS_XP}+@{COMPUTER_XP}+@{TECHNICIAN_XP}+@{ROBOTICS_XP}+@{MEDICAL_XP}+@{ENVIRONMENTAL_XP}+@{PSYCHO-SOCIAL_XP}+@{ENERGY_XP}+@{ROCKET_XP}+@{ASTRONAVIGATION_XP}+@{ENGINEER_XP}+@{STARPILOT_XP}">SKILLS</div>
-            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">=</span></div>
-            <div class="sheet-col-1-8 sheet-large-label sheet-center"><input type="number" class="sheet-underlined sheet-center" title="This is XP you have earned and spent" name="attr_spent_xp" disabled value="@{ability_xp}+@{race_xp}+@{skill_xp}"><span style="font-weight:bolder">SPENT</span></div>
-            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">+</span></div>
-            <div class="sheet-col-1-7 sheet-large-label sheet-center"><input type="number" class="sheet-underlined sheet-center" name="attr_XP" title="This is XP that you earned but haven't spent" value=0><span style="font-weight:bolder">XP</span></div>
-            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">=</span></div>
-            <div class="sheet-col-1-8 sheet-large-label sheet-center"><input type="number" class="sheet-underlined sheet-center" title="This is your lifetime earned XP" name="attr_total_xp" disabled value="@{ability_xp}+@{race_xp}+@{skill_xp}+@{XP}"><span style="font-weight:bolder">TOTAL</span></div>
+            <div class="sheet-col-1-8"></div>
+            <div class="sheet-col-1-5 sheet-large-label sheet-center"><input type="number" class="sheet-underlined sheet-center" name="attr_XP" title="This is XP that you earned but haven't spent" value=0><span style="font-weight:bolder">EARNED XP</span></div>
+            <div class="sheet-col-1-14 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">+</span></div>
+            <div class="sheet-col-1-5 sheet-large-label sheet-center"><input type="text" class="sheet-underlined sheet-center" title="This is XP you have earned and spent" name="attr_spent_xp" disabled value="@{ability_xp}+@{race_xp}+@{skill_xp}"><span style="font-weight:bolder">SPENT XP</span></div>
+            <div class="sheet-col-1-14 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">=</span></div>
+            <div class="sheet-col-1-6 sheet-large-label sheet-center"><input type="text" class="sheet-underlined sheet-center" title="This is your lifetime earned XP" name="attr_total_xp" disabled value="@{ability_xp}+@{race_xp}+@{skill_xp}+@{XP}"><span style="font-weight:bolder">TOTAL XP</span></div>
         </div>
-        <br>
+        <hr />
+        <div class="sheet-row">
+            <div class="sheet-col-1-7 sheet-large-label sheet-center"><input type="text" class="sheet-center" title="@{ability_xp}" name="attr_ability_xp" disabled value="(@{STR_XP}+@{STA_XP}+@{DEX_XP}+@{RS_XP}+@{INT_XP}+@{LOG_XP}+@{PER_XP}+@{LDR_XP})">ABILITY</div>
+            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">+</span></div>
+            <div class="sheet-col-1-7 sheet-large-label sheet-center"><input type="text" class="sheet-center" title="@{race_xp}" name="attr_race_xp" disabled value="(@{Race_Ability1_XP}+@{Race_Ability2_XP}+@{Languages_XP})">RACE</div>
+            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">+</span></div>
+            <div class="sheet-col-1-7 sheet-large-label sheet-center"><input type="text" class="sheet-center" title="@{skill_xp}" name="attr_skill_xp" disabled value="@{BEAM_XP}+@{PROJECTILE_XP}+@{GYROJET_XP}+@{MELEE_XP}+@{THROWN_XP}+@{MA_XP}+@{DEMOLITIONS_XP}+@{COMPUTER_XP}+@{TECHNICIAN_XP}+@{ROBOTICS_XP}+@{MEDICAL_XP}+@{ENVIRONMENTAL_XP}+@{PSYCHO-SOCIAL_XP}+@{ENERGY_XP}+@{ROCKET_XP}+@{ASTRONAVIGATION_XP}+@{ENGINEER_XP}+@{STARPILOT_XP}">SKILLS</div>
+            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">+</span></div>
+            <div class="sheet-col-1-7 sheet-large-label sheet-center"><input type="text" class="sheet-center" title="@{race_xp}" name="attr_race_xp" disabled value="@{OCC_XP}">OCC</div>
+            <div class="sheet-col-1-24 sheet-large-label sheet-center" style="padding-top:4px;"><span style="font-size:100%;font-weight: bolder">=</span></div>
+            <div class="sheet-col-1-5 sheet-large-label sheet-center"><input type="text" class="sheet-underlined sheet-center" title="This is XP you have earned and spent" name="attr_spent_xp" disabled value="@{ability_xp}+@{race_xp}+@{skill_xp}"><span style="font-weight:bolder">SPENT XP</span></div>
+        </div>
 
         <br>
-        <h4>PRIMARY SKILL AREA</h4>
+        <h4>OCCUPATION (PRIMARY SKILL AREA)</h4>
          <div class="sheet-row">
-            <div class="sheet-col-1-2 sheet-center"><select name="attr_PSA" style="font-size:90">
+            <div class="sheet-col-2-5 sheet-center"><select name="attr_PSA" style="font-size:90%">
                 <option selected>NONE</option>
                 <option>MILITARY</option>
                 <option>TECHNICAL</option>            
                 <option>BIOSOCIAL</option>
             </select>
-            <span style="font-size:100%;font-weight: bolder;padding-top:5px">PRIMARY SKILL AREA (PSA)</span></div>
-            <div class="sheet-col-1-2 sheet-center"><input type="text" title="Occupation" name="attr_OCC" value=""><span style="font-weight:bolder">OCCUPATION</span></div>
-
+            <span style="font-size:80%;font-weight: bolder;padding-top:5px">PRIMARY SKILL AREA (PSA)</span></div>
+            <div class="sheet-col-2-5 sheet-center" style="font-size:80%"><input style="font-size:100%" type="text" title="Occupation" name="attr_OCC" value=""><span style="font-weight:bolder">OCCUPATION</span></div>
+            <div class="sheet-col-1-5 sheet-center" style="font-size:80%"><input style="font-size:100%" type="text" title="Occupation" name="attr_OCC_XP" value="0"><span style="font-weight:bolder">SPENT OCC XP</span></div>
         </div>
         <br>
         <div class="sheet-row">
-            <div class="sheet-col-1 sheet-large-label sheet-center" style="font-weight:bolder">PSA / OCC NOTES</div>            
-            <textarea class="sheet-left" style="width:380px;height:40px" name="attr_PSA_INFO" placeholder="Primary Skill Area and / or Occupation notes"></textarea>
+            <div class="sheet-col-1 sheet-large-label sheet-center" style="font-weight:bolder">OCCUPATION DESCRIPTION</div>            
+            <textarea class="sheet-left" style="width:380px;height:40px;font-size:100%" name="attr_PSA_INFO" placeholder="Describe your Occupation"></textarea>
         </div>
 </div>
 
@@ -681,10 +687,12 @@
         </div>
     <h4>CURRENT POSITION</h4>
         <div class="sheet-row">
-            <div class="sheet-col-1-5 sheet-center" style="font-size:80%"><input class="sheet-underlined" type="number" min=0 max=6 name="attr_job_Rank" value="0"><span style="font-size:100%;font-weight: bolder;padding-top:5px">RANK LEVEL</span></div>        
-            <div class="sheet-col-1-2 sheet-center"><input class="sheet-underlined" style="font-size:90%" type="text" name="attr_job_Title" value=""><span style="font-size:100%;font-weight: bolder;padding-top:5px">TITLE (RANK)</span></div>
+            <div class="sheet-col-1-6 sheet-center" style="font-size:80%"><input class="sheet-underlined" type="number" min=0 max=6 name="attr_job_Rank" value="0"><span style="font-size:100%;font-weight: bolder;padding-top:5px">RANK LEVEL</span></div>        
+            <div class="sheet-col-2-5 sheet-center" style="font-size:80%"><input class="sheet-underlined" style="font-size:90%" type="text" name="attr_job_Title" value=""><span style="font-size:100%;font-weight: bolder;padding-top:5px">EMPLOYEE RANK (TITLE)</span></div>
             <div class='sheet-col-1-24'></div>
-            <div class="sheet-col-1-4 sheet-center" style="font-size:80%"><input class="sheet-underlined" type="number" name="attr_PAY" value="0"><span style="font-size:100%;font-weight: bolder;padding-top:5px">PAY PER DAY</span></div>        
+            <div class="sheet-col-1-6 sheet-center" style="font-size:80%"><input class="sheet-underlined" type="number" name="attr_OCC_XP_NEED" value="0"><span style="font-size:100%;font-weight: bolder;padding-top:5px">XP NEEDED</span></div>
+            <div class='sheet-col-1-24'></div>
+            <div class="sheet-col-1-6 sheet-center" style="font-size:80%"><input class="sheet-underlined" type="number" name="attr_PAY" value="0"><span style="font-size:100%;font-weight: bolder;padding-top:5px">PAY PER DAY</span></div>        
         </div>
         <br>
         <div class="sheet-row">
@@ -2370,11 +2378,11 @@
 </div> <!-- End of Player sheet -->
 
 <div class="sheet-npc">
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab6" value="6" title="Robot" />
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab5" value="5" title="Robot Gear" />    
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab7" value="7" title="Creature" />
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab8" value="8" title="Vehicle" />
-    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab9" value="9" title="Starship" />
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab6" value="6"  /><span title="Robot"></span>
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab5" value="5" /><span title="Robot Gear"></span>    
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab7" value="7" /><span title="Creature"></span>
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab8" value="8"  /><span title="Vehicle"></span>
+    <input type="radio" name="attr_tab" class="sheet-tab sheet-tab9" value="9"  /><span title="Starship"></span>
     <input type="radio" name="attr_tab" class="sheet-tab sheet-tab12 sheet-pictos" value="12" title="y" />
  <div class="sheet-tab-br"></div>
  
@@ -3785,7 +3793,6 @@
 <!-- START OF STARSHIP SECTION -->
 <div class="sheet-tab9">
     <h4>UPF STARSHIP LICENSE FORM 9622P-5K</h4>
-    <h1 style="text-align: center;font-size:125%">**BETA RELEASE (USE AT YOUR OWN RISK)**</h1>
     <div class="sheet-row">
         <div class="sheet-col-1-8 sheet-large-label sheet-center"><input class="sheet-underlined sheet-center" type="text" readonly name="attr_SS_ID"/>UPF ID TAG</div>  
         <div class="sheet-col-1-5 sheet-large-label sheet-center"><input class="sheet-underlined sheet-center" type="text" readonly name="attr_character_name"  />REGISTERED NAME</div>
@@ -3831,6 +3838,8 @@
     <hr />
     <div class="sheet-row">
         <div class="sheet-col-1-6 sheet-small-label sheet-center" style="font-weight:bolder"><input class="sheet-underlined sheet-center" type="text"  name="attr_SS_Construction_Date" placeholder="Enter in Date" />CONSTRUCTION DATE</div>
+        <div class="sheet-col-1-11 sheet-small-label sheet-center" style="font-weight:bolder"><input class="sheet-underlined sheet-center" type="number"  name="attr_SS_Construction_Date" />AGE (GST)</div>
+
         <div class="sheet-col-1-24 sheet-small sheet-center"></div>
         <div class="sheet-col-1-7 sheet-small-label sheet-center" style="font-weight:bolder"><input class="sheet-underlined sheet-center" type="text" name="attr_SS_Cost"  />VALUE (CR)</div>
         <div class="sheet-col-1-24 sheet-small sheet-center"></div>
@@ -3864,10 +3873,9 @@
 <h4>HELM CONTROLS</h4>
     <div class="sheet-row">
         <div class="sheet-col-1-7 sheet-small-label sheet-center" style="font-weight:bolder"><input class="sheet-underlined sheet-center" type="number" name="attr_SS_SPEED" value=0  />CURRENT SPEED</div>
-        <div class="sheet-col-1-6"><button style="font-size:80%;font-weight:bolder" type="roll" name="attr_ROLL-Change-Speed"  title="Change Speed Action" value="!power --name|@{character_name} --charid|@{character_id} --leftsub|SPEED CHANGE --rightsub|?{Speed Adjust (+/- ADF)|0}  --Previous Speed|[[@{SS_SPEED}]] --NEW SPEED|[[@{SS_SPEED}+?{Speed Adjust (+/- ADF)|0}]]
-!setattr --charid @{character_id} --mod --SS_SPEED|?{Speed Adjust (+/- ADF)|}">&nbsp;SPEED</button></div>
+        <div class="sheet-col-1-6"><button style="font-size:80%;font-weight:bolder" type="roll" name="attr_ROLL-Change-Speed"  title="Change Speed Action: Only works with the ChatSetAttr API" value="!setattr --charid @{character_id} --mod --SS_SPEED|?{Speed Adjust (+/- ADF)|}">&nbsp;SPEED</button></div>
         <div class="sheet-col-1-5"><button style="font-size:80%;font-weight:bolder" type="roll" name="attr_ROLL-Increase-MR"  title="Increase MR Action" value="@{view} &{template:SFSkill} {{name=@{SS_Pilot}}} {{roll_name=INCREASE MR}}{{skill=STARSHIP PILOT}}{{skill_num=[[@{SS_Pilot_Level}]]}}{{base=[[0]]}}{{skill_total=[[@{SS_Pilot_Level}*10]]}}{{misc_mod=[[?{Other Modifier|0}]]}}{{result=[[D100cs<6cf>95]]}}{{final=[[@{SS_Pilot_Level}*10+?{Other Modifier|}]]}}{{crit=CRITICAL SUCCESS}}{{fail=CRITICAL FAILURE}}{{success=Pilot can make one additional turn}}{{failure=No additional maneuverability increase}}{{time=[[1]] Space Turn}}">&nbsp;INC MR</button></div>
-        <div class="sheet-col-1-20 sheet-center sheet-pictos" style="padding-top:4px"><span style="font-size:130%" title="Only works with HS class 4 ships or smaller">!</span></div> 
+        <div class="sheet-col-1-20 sheet-center sheet-pictos" style="padding-top:4px"><span style="font-size:130%" title="Only works with HS class 3 Ships and smaller and only against Torpedoes">!</span></div> 
         <div class="sheet-col-1-7 sheet-small-label sheet-center" style="font-weight:bolder"><input class="sheet-underlined sheet-center" type="number" disabled  name="attr_SS_Evasion" value="(@{SS_MR}*5)+(@{SS_Pilot_Level}*3)"  />EVASION</div><div class="sheet-col-1-24 sheet-small sheet-left" style="padding-top:5px;font-weight:bolder;">&nbsp;%</div>
         <div class="sheet-col-1-24 sheet-small sheet-center"></div> 
         <div class="sheet-col-1-7 sheet-small-label sheet-center" style="font-weight:bolder"><input class="sheet-underlined sheet-center" type="number" disabled  name="attr_SS_Pilot_Acc" value="(@{SS_Pilot_Level}*5)"  />FF ACC INCREASE</div><div class="sheet-col-1-18 sheet-small sheet-left" style="padding-top:5px;font-weight:bolder;">&nbsp;%</div>
@@ -3943,21 +3951,23 @@
 
         <h4>DAMAGED SYSTEMS</h4>       
         <fieldset class="repeating_ssdamage">
-        <div class="sheet-col-1-5 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text"  name="attr_SS_System_Hit"/><span style="font-size:100%;font-weight: bolder">SYSTEM HIT</span></div>
+        <div class="sheet-col-1-5 sheet-small-label sheet-center"><input class="sheet-underlined sheet-center" type="text"  name="attr_SS_System_Hit"/><span style="font-size:100%;font-weight: bolder">SYSTEM DAMAGED</span></div>
         <div class="sheet-col-1-16 sheet-small-label sheet-center"><input type="number" name="attr_SS_DMG_HP" value=0 /><span style="font-size:100%;font-weight: bolder">HP</span></div>
         <div class="sheet-col-1-16 sheet-small-label sheet-center"><input type="number"  name="attr_SS_DMG_ADF" value=0><span style="font-size:100%;font-weight: bolder">ADF</span></div>            
         <div class="sheet-col-1-16 sheet-small-label sheet-center"><input type="number"  name="attr_SS_DMG_MR" value=0><span style="font-size:100%;font-weight: bolder">MR</span></div>            
         <div class="sheet-col-1-16 sheet-small-label sheet-center"><input type="number"  name="attr_SS_DMG_DCR" value=0><span style="font-size:100%;font-weight: bolder">DCR</span></div>
-              <div class="sheet-col-1-8 sheet-small-label sheet-center"><select name="attr_SS_Hit_DMG_Level">
-                <option selected>MINOR</option>
-                <option >MAJOR</option>
-                <option >TOTALED</option>           
+              <div class="sheet-col-1-7 sheet-small-label sheet-center"><select name="attr_SS_Hit_DMG_Level">
+                <option selected>REPAIRABLE</option>
+                <option >DRY DOCK ONLY</option>
+                <option >BREAKDOWN</option>           
             </select><span style="font-size:100%;font-weight: bolder">DAMAGE LEVEL</span></div>
         <div class="sheet-col-1-24"></div>
         <div class="sheet-col-1-12 sheet-small-label sheet-center"><input class="sheet-center" type="number"  name="attr_SS_Hit_DCR" min=0  max=100 value=0 /><span style="font-size:100%;font-weight: bolder">DCR %</span></div>
         <div class="sheet-col-1-18 sheet-small-label sheet-center" style="padding-top:4px"><input class="sheet-center" style="width:25px;height:25px" type="checkbox" name="attr_SS_Hit_ENG" value=1  /><span style="font-size:100%;font-weight: bolder">ENG %</span></div>
         <div class="sheet-col-1-12 sheet-small-label sheet-center"><input class="sheet-center" type="number" disabled name="attr_SS_Hit_Repair" value="@{SS_Hit_DCR}+(@{SS_DCR-ENG}*@{SS_Hit_ENG})" /><span style="font-size:100%;font-weight: bolder">TOTAL %</span></div>
-        <div class="sheet-col-1-13 sheet-small-label sheet-center"><button style="font-size:80%;font-weight:bolder" type="roll" name="roll_SS_Repair" title="Starship Repair" value="@{view} &{template:SFSkill} {{name=@{character_name}}} {{roll_name=@{SS_System_Hit} REPAIR}}{{skill=DAMAGE CONTROL}}{{skill_num=[[@{SS_Engineer_Level}]]}}{{skill_total=[[@{SS_DCR-ENG}*@{SS_Hit_ENG}]]}}{{base=[[@{SS_Hit_DCR}]]}}{{misc_mod=[[?{Other Modifier|0}]]}}{{result=[[D100cs<6cf>95]]}}{{final=[[@{SS_Hit_Repair}+0+?{Other Modifier|}]]}}{{crit=ADDITIONAL MINOR REPAIR MADE ON SYSTEM}}{{fail=DRYDOCK REPAIR ONLY}}{{success=SYSTEM REPAIRED or [[1D10]] HP}}{{failure=REPAIR FAILED}}{{time=[[3]] Space Turns}}"><span style="font-size:140%;font-family:dicefontd10;">k </span> REPAIR</button> </div>
+        <div class="sheet-col-1-13 sheet-small-label sheet-center"><button style="font-size:80%;font-weight:bolder;padding-top:4px" type="roll" name="roll_SS_Repair" title="Starship Repair" value="@{view} &{template:SFSkill} {{name=@{character_name}}} {{roll_name=@{SS_System_Hit} REPAIR}}{{skill=DAMAGE CONTROL}}{{skill_num=[[@{SS_Engineer_Level}]]}}{{skill_total=[[@{SS_DCR-ENG}*@{SS_Hit_ENG}]]}}{{base=[[@{SS_Hit_DCR}]]}}{{misc_mod=[[?{Other Modifier|0}]]}}{{result=[[D100cf>90]]}}{{final=[[@{SS_Hit_Repair}+0+?{Other Modifier|}]]}}{{crit=AUTOMATIC SUCCESS}}{{fail=AUTOMATIC FAILURE (DRY DOCK ONLY IF ROLLED 99-00)}}{{success=SYSTEM REPAIRED or [[1D10]] HP}}{{failure=REPAIR FAILED (DRY DOCK ONLY IF IT WAS A HULL REPAIR)}}{{time=[[3]] Space Turns}}"><span style="font-size:140%;font-family:dicefontd10;">k </span> REPAIR</button> </div>
+        <div class="sheet-col-1 sheet-small-label sheet-center"><input class="sheet-center" type="text"  name="attr_SS_Hit_EFF" placeholder="Additional Effects / Modifiers"/><span style="font-size:100%;font-weight: bolder"></span></div>
+
         <hr >
         </fieldset>
 
@@ -4198,7 +4208,7 @@
     <hr /> 
 </div> <!-- END OF STARSHIP SECTION -->
 </div> <!-- END OF CHARACTER SHEET SECTION -->
-    <label>Author:  Wade Wilson (Black Falcon on Roll20) VER: 2.5 (2-25-2017)</label>
+    <label>Author:  Wade Wilson (Black Falcon on Roll20) VER: 2.6 (3-7-2017)</label>
 
 <rolltemplate class="sheet-rolltemplate-SF">
     <table>
@@ -4268,7 +4278,7 @@
             <td class="result" style="text-decoration:underline;text-align:left">TARGET</td>
             <td class="result" style="text-decoration:underline;text-align:center">ATT</td>
             <td class="result" style="text-decoration:underline;text-align:center">DMG</td>            
-            {{#target}}
+ 
                 <tr><td style="font-weight: bold;font-size:90%;text-align:left">1: {{target}}</td>
                 <td style="font-weight: bold;font-size:110%;text-align:center">{{result}}</td>
 
@@ -4310,7 +4320,7 @@
                     {{/rollWasCrit() result}}
                 {{/rollLess() result final}}
 
-            {{/target}}
+
             
             {{#target2}}
                 <tr><td style="font-weight: bold;font-size:90%">2: {{target2}}</td>
@@ -5999,7 +6009,7 @@ on("change:repeating_mweapons",function(){
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "ELECTRIC SWORD") {
             setAttrs({repeating_mweapons_Melee_DMG: 4}); setAttrs({repeating_mweapons_Melee_DMG_max: "GAUSS"}); setAttrs({repeating_mweapons_Melee_Skill_Mod: "@{MELEE}"});
-            setAttrs({repeating_mweapons_Melee_Type: "repeating_mweapons_@{row_id2}_Melee_AMMO -2"}); setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
+            setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
             setAttrs({repeating_mweapons_Melee_Weapon_Att_BNS: 10}); setAttrs({repeating_mweapons_Melee_Weapon_Effect: "NO PS DMG"}); setAttrs({repeating_mweapons_Melee_NoMod: "0"}); 
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "KNIFE") {
@@ -6034,12 +6044,12 @@ on("change:repeating_mweapons",function(){
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "SONIC KNIFE") {
             setAttrs({repeating_mweapons_Melee_DMG: 3}); setAttrs({repeating_mweapons_Melee_DMG_max: "SONIC"}); setAttrs({repeating_mweapons_Melee_Skill_Mod: "@{MELEE}"});
-            setAttrs({repeating_mweapons_Melee_Type: "repeating_mweapons_@{row_id2}_Melee_AMMO -1"}); setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
+            setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
             setAttrs({repeating_mweapons_Melee_Weapon_Att_BNS: 10}); setAttrs({repeating_mweapons_Melee_Weapon_Effect: "NO PS DMG"}); setAttrs({repeating_mweapons_Melee_NoMod: "0"}); 
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "SONIC SWORD") {
             setAttrs({repeating_mweapons_Melee_DMG: 5}); setAttrs({repeating_mweapons_Melee_DMG_max: "SONIC"}); setAttrs({repeating_mweapons_Melee_Skill_Mod: "@{MELEE}"});
-            setAttrs({repeating_mweapons_Melee_Type: "repeating_mweapons_@{row_id2}_Melee_AMMO -2"}); setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
+            setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
             setAttrs({repeating_mweapons_Melee_Weapon_Att_BNS: 15}); setAttrs({repeating_mweapons_Melee_Weapon_Effect: "NO PS DMG"}); setAttrs({repeating_mweapons_Melee_NoMod: "0"}); 
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "SPEAR") {
@@ -6049,7 +6059,7 @@ on("change:repeating_mweapons",function(){
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "STUNSTICK") {
             setAttrs({repeating_mweapons_Melee_DMG: 3}); setAttrs({repeating_mweapons_Melee_DMG_max: "SONIC"}); setAttrs({repeating_mweapons_Melee_Skill_Mod: "@{MELEE}"});
-            setAttrs({repeating_mweapons_Melee_Type: "repeating_mweapons_@{row_id2}_Melee_AMMO -2"}); setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
+            setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
             setAttrs({repeating_mweapons_Melee_Weapon_Att_BNS: 5}); setAttrs({repeating_mweapons_Melee_Weapon_Effect: "NO PS DMG / LETHAL OR STUN"}); setAttrs({repeating_mweapons_Melee_NoMod: "0"}); 
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "SWORD") {
@@ -6059,7 +6069,7 @@ on("change:repeating_mweapons",function(){
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "VIBROKNIFE") {
             setAttrs({repeating_mweapons_Melee_DMG: 2}); setAttrs({repeating_mweapons_Melee_DMG_max: "INERTIA"}); setAttrs({repeating_mweapons_Melee_Skill_Mod: "@{MELEE}"});
-            setAttrs({repeating_mweapons_Melee_Type: "repeating_mweapons_@{row_id2}_Melee_AMMO -1"}); setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
+            setAttrs({repeating_mweapons_Melee_AMMO_max: 20}); setAttrs({repeating_mweapons_Melee_Blunt: "D100cs<2cf>96"});
             setAttrs({repeating_mweapons_Melee_Weapon_Att_BNS: 5}); setAttrs({repeating_mweapons_Melee_Weapon_Effect: ""}); setAttrs({repeating_mweapons_Melee_NoMod: "1"}); 
         }
         if(values.repeating_mweapons_Melee_Weapon.toUpperCase()  == "WHIP") {
@@ -6580,3 +6590,4 @@ on('change:otherdef', function(){
 });   
 
 </script>
+
